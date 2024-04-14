@@ -1,13 +1,13 @@
 
 // Team members tasks:
-// --------------------
-// Tyler:
-// Katie:
-// Timothy:
-// AJ:
+// -------------------------------------------------------------------------------------------------------------
+// Tyler: Need to implement main file, handle_error method in the Expression_Tree class. Create Test cases
+// Katie: Need to implement Tree_Node class header, Token class header and cpp file.
+// Timothy: Need to implement Expression_Tree class header, cpp file
+// AJ: Need to implement Build_Tree header and cpp file, Evaluate_Tree header and cpp file.
 
 // Bugs needs to be Fixed:
-// ------------------------
+// -------------------------------------------------------------------------------------------------------------
 // 1)
 
 // Questions for Professor:
