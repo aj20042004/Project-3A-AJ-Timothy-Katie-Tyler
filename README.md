@@ -1,7 +1,7 @@
 # Binary Tree Infix Expression Parser
 
 Overview:
-- This project aims to implement an infix expression parser in C++ using stacks. The parser will be capable of evaluating arithmetic and logical expressions efficiently.
+- This project aims to implement an infix expression parser in C++ using binary trees. The parser will be capable of evaluating arithmetic and logical expressions efficiently.
 
 Technical Requirements:
 - Parse infix expressions with support for arithmetic and logical operators with the specified precedencies.
