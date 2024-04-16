@@ -20,13 +20,24 @@
 // 6) Do I need to create a cpp file for Tree_Node class ?
 
 #include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <string>
 
 using namespace std;
 
 int main() {
+    fstream in("input.txt");
+    string infix_expression;
 
+    //Reads stuff in
+    while (in >> infix_expression) {
+        string result = (infix_expression); //Put the function name here 
+        cout << (result) << endl;
+    }
 
-
+    //Closes the file
+    in.close();
 	system("pause");
 	return 0;
 }
