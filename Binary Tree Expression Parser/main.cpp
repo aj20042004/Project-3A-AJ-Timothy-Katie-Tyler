@@ -23,20 +23,27 @@
 #include <iomanip>
 #include <fstream>
 #include <string>
-
+#include "Expression_Tree.h"
 using namespace std;
-
 int main() {
-    fstream in("input.txt");
+    ifstream in("input.txt"); // Opens the input file
     string infix_expression;
 
-    //Reads stuff in
-    while (in >> infix_expression) {
-        string result = (infix_expression); //Put the function name here 
+    // Returns an error if no input file exists
+    if (!in.is_open()) {
+        cout << "ERROR: Could not open file." << endl;
+        return 1; // Return error code indicating failure
+    }
+
+    Expression_Tree parser;
+
+    // Reads stuff in
+    while (in >> infix_expression) {  
+        int result = parser.parse_and_evaluate(infix_expression);
         cout << (result) << endl;
     }
 
-    //Closes the file
+    // Closes the file, shuts down the program.
     in.close();
 	system("pause");
 	return 0;
