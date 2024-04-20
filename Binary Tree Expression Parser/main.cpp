@@ -12,7 +12,8 @@
 
 // Questions for Professor:
 // -------------------------------------------------------------------------------------------------------------
-// 
+// 1) About the project structure ( UML diagram ), check the relationships of each classes
+// 2) Implementation of convert_to_postfix, evaluate and build_tree, Time complexity 
 
 #include <iostream>
 #include <iomanip>
