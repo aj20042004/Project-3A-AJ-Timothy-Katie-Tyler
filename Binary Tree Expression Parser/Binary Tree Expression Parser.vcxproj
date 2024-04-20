@@ -128,13 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Build_Tree.cpp" />
+    <ClCompile Include="Convert_to_postfix.cpp" />
     <ClCompile Include="Evaluate_Tree.cpp" />
     <ClCompile Include="Expression_Tree.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Token.cpp" />
+    <ClCompile Include="Tree_Node.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Build_Tree.h" />
+    <ClInclude Include="Convert_to_postfix.h" />
     <ClInclude Include="Evaluate_Tree.h" />
     <ClInclude Include="Expression_Tree.h" />
     <ClInclude Include="Token.h" />

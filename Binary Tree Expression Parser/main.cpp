@@ -12,21 +12,42 @@
 
 // Questions for Professor:
 // -------------------------------------------------------------------------------------------------------------
-// 1) Does Tree_Node class a composition or dependency for expression tree, build_tree and evaluate_tree?
-// 2) Does Token class a composition or dependency for Tree_Node, Build_Tree(vector<Token>), evaluate_tree ?
-// 3) Should I build a tree from infix to postfix ? and then use postfix tree to evaluate ?
-// 4) Tree_Node class (data, left, right) should be public or private ?
-// 5) Expression_Tree class (Tree_Node * root) should be public or private ?
-// 6) Do I need to create a cpp file for Tree_Node class ?
+// 
 
 #include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <string>
+#include "Expression_Tree.h"
 
 using namespace std;
 
 int main() {
 
+    ifstream input_file("input.txt"); // Opens the input file
+    
+    string infix_expression;
 
-	cout << "Just Testing" << endl;
+    // Returns an error if no input file exists
+    if (!input_file) {
+
+        cout << "Error! Sorry...Cannot read the file" << endl;
+        return 1; // Return error code indicating failure
+    }
+
+    Expression_Tree parser;
+
+    // Reads stuff in
+    while (input_file >> infix_expression) {
+
+        int result = parser.parse_and_evaluate(infix_expression);
+        cout << result << endl;
+
+    }
+
+
+    // Closing the input file
+    input_file.close();
 
 	return 0;
 }

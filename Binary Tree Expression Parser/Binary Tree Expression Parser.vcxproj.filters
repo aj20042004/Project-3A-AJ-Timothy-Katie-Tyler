@@ -18,33 +18,33 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Token.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Evaluate_Tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Expression_Tree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Build_Tree.cpp">
+    <ClCompile Include="Token.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Convert_to_postfix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Build_Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Evaluate_Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Token.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Tree_Node.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Evaluate_Tree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Expression_Tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Build_Tree.h">
+    <ClInclude Include="Convert_to_postfix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
