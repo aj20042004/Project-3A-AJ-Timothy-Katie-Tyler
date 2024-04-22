@@ -1,4 +1,3 @@
-
 #include <string>
 #include <iostream>
 #include "Expression_Tree.h"
@@ -30,12 +29,12 @@ int Expression_Tree::parse_and_evaluate(const string& infix_string) {
 		string postfix_string = exp_parser_obj.infix_to_postfix(infix_string);
 
 		// Evaluating binary tree postfix
-		int result_num = exp_tree_obj.Evaluator(Tree_Node * root);
+		int result_num = exp_tree_obj.Evaluator(Tree_Node* root);
 
 		// Returning the result number
 		return result_num;
 	}
-	catch (const execption& error) {
+	catch (const exception& error) {
 
 		// Catching the error message
 		handle_error(error.what());
@@ -56,7 +55,7 @@ int Expression_Tree::precedence(const string& str_operator) {
 	}
 
 	// Precedence of multiply, divide, and mod
-	if (str_operator == "*" || str_operator == "/" || str_operator++ "%") {
+	if (str_operator == "*" || str_operator == "/" || str_operator == "%") {
 		return 6;
 	}
 
