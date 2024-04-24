@@ -27,7 +27,7 @@ int Expression_Tree::parse_and_evaluate(const string& infix_string) {
 
 		// Converting infix to postfix
 		string postfix_string = exp_parser_obj.infix_to_postfix(infix_string);
-
+		
 		// Evaluating binary tree postfix
 		int result_num = exp_tree_obj.Evaluator(Tree_Node* root);
 
