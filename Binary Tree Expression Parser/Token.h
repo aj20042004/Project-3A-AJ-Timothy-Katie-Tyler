@@ -1,31 +1,25 @@
 #ifndef TOKEN_H
 #define TOKEN_H
-
+#include <iostream>
 #include <string>
 
 using namespace std;
 
-enum Token_type {
-	OPERATOR,
-	OPERAND
-};
-
 class Token {
+
 public:
+	enum Type { OPERATOR, OPERAND };
+
 	// Constructor.
-	Token(Token_type type, const string& value);
+	Token(Type,const string&);
 
 	// Getter methods.
-	Token_type get_type() const {
-		return type;
-	}
+	Type get_type() const;
 
-	string get_value() const {
-		return value;
-	}
+	string get_value() const;
 
 private:
-	Token_type type;
+	Type Token_type;
 	string value;
 };
 

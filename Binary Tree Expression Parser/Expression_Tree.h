@@ -14,10 +14,10 @@ public:
 	//Destructor
 	~Expression_Tree();
 
-	// Parising infix string and evualting the postfix
+	// Parsing infix string and evaluating the postfix
 	int parse_and_evaluate(const string&);
 
-	// Power function to calculate exponenets
+	// Power function to calculate exponents
 	int power_function(int, int);
 
 	// Precedence method to evaluate the expression by orders of operation
