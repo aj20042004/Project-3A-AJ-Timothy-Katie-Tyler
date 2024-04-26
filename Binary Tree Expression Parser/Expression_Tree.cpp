@@ -70,7 +70,7 @@ int Expression_Tree::precedence(const string& str_operator) {
 	}
 
 	// Precedence of equality
-	if (str_operator == "==" || str_operator == "=") {
+	if (str_operator == "==" || str_operator == "!=") {
 		return 3;
 	}
 

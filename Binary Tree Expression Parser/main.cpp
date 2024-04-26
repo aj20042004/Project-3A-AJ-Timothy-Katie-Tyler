@@ -1,10 +1,10 @@
 
 // Team members tasks:
-// -------------------------------------------------------------------------------------------------------------
-// Tyler: Need to implement main file, handle_error method in the Expression_Tree class. Create Test cases
-// Katie: Need to implement Tree_Node class header, Token class header and cpp file.
-// Timothy: Need to implement Expression_Tree class header, cpp file
-// AJ: Need to implement Build_Tree header and cpp file, Evaluate_Tree header and cpp file.
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// 1) Katie: Creating the test cases and validating the output ( Can use last project's test cases ), in-line comments for Token header and cpp files, Tree_Node header and cpp files
+// 2) Timothy: Need to complete the Expression_Tree.cpp file ( in-line comments on Expression_Tree.cpp - spelling mistakes)
+// 3) Tyler: Need to complete the main.cpp ( in-line comments in the main file )
+// 4) AJ: Review the code
 
 // Bugs needs to be Fixed:
 // -------------------------------------------------------------------------------------------------------------
@@ -12,8 +12,7 @@
 
 // Questions for Professor:
 // -------------------------------------------------------------------------------------------------------------
-// 1) About the project structure ( UML diagram ), check the relationships of each classes
-// 2) Implementation of convert_to_postfix, evaluate and build_tree, Time complexity 
+
 
 #include <iostream>
 #include <iomanip>
