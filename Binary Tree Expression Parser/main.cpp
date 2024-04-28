@@ -39,10 +39,10 @@ int main() {
 
     // Reads stuff in
     while (input_file >> infix_expression) {
-
-        int result = parser.parse_and_evaluate(infix_expression);
-        cout << result << endl;
-
+        if (infix_expression != "") { //Checks to make sure the line being read in isn't empty
+            int result = parser.parse_and_evaluate(infix_expression);
+            if (result != -9999999) { cout << result << endl; } //-9999999 would indicate an invalid expression
+        }
     }
 
 
