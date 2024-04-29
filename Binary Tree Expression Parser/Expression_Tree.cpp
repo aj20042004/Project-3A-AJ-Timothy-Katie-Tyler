@@ -64,7 +64,7 @@ int Expression_Tree::precedence(const string& str_operator) {
 		return 5;
 	}
 
-	// Precedence of comparision
+	// Precedence of comparison
 	if (str_operator == ">" || str_operator == ">=" || str_operator == "<" || str_operator == "<=") {
 		return 4;
 	}
@@ -74,7 +74,7 @@ int Expression_Tree::precedence(const string& str_operator) {
 		return 3;
 	}
 
-	// Precedence of logicad "and"
+	// Precedence of logical "and"
 	if (str_operator == "&&") {
 		return 2;
 	}

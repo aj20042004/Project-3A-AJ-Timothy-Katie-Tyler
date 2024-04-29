@@ -13,7 +13,8 @@
 // Questions for Professor:
 // -------------------------------------------------------------------------------------------------------------
 
-
+#include <codecvt>
+#include <sstream>
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -24,30 +25,43 @@ using namespace std;
 
 int main() {
 
-    ifstream input_file("input.txt"); // Opens the input file
+    ifstream input_file("Test_case_1.txt"); // Opens the input file
     
+    // Creating the instance for Expression_Tree 
+    Expression_Tree parser;
+
+    // Initializing the variable
     string infix_expression;
 
     // Returns an error if no input file exists
     if (!input_file) {
 
         cout << "Error! Sorry...Cannot read the file" << endl;
-        return 1; // Return error code indicating failure
+        return -1; // Return error code indicating failure
     }
 
-    Expression_Tree parser;
+    // Using getline to read the entire line
+    while (getline(input_file, infix_expression)) {
 
-    // Reads stuff in
-    while (input_file >> infix_expression) {
-        if (infix_expression != "") { //Checks to make sure the line being read in isn't empty
-            int result = parser.parse_and_evaluate(infix_expression);
-            if (result != -9999999) { cout << result << endl; } //-9999999 would indicate an invalid expression
+        // Checking if the line string is empty
+        if (infix_expression == "") {
+            break;
         }
+        
+        // Parsing and evaluating the formatted infix string using the parser instance
+        int result = parser.parse_and_evaluate(infix_expression);
+        
+        // Checking for Error
+        if (result != -9999999) {
+            cout << "The Result is: " << result << endl;
+        }
+       
     }
 
 
     // Closing the input file
     input_file.close();
 
+    // Returning
 	return 0;
 }

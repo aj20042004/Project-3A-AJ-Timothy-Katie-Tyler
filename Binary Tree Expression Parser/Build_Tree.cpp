@@ -50,7 +50,6 @@ Tree_Node* Build_Tree::tree_builder(const string& postfix_string) {
 
 			}
 
-
 			// Create a new node for the operator
 			Tree_Node* operator_node = new Tree_Node(Token(Token::OPERATOR, char_token));
 
