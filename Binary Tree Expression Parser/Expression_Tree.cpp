@@ -3,6 +3,7 @@
 #include "Expression_Tree.h"
 #include "Convert_to_postfix.h"
 #include "Evaluate_Tree.h"
+#include "Build_Tree.h"
 
 using namespace std;
 
@@ -24,12 +25,16 @@ int Expression_Tree::parse_and_evaluate(const string& infix_string) {
 
 		Convert_to_postfix exp_parser_obj;
 		Evaluate_Tree exp_tree_obj;
+		Build_Tree tree_build_stack;
 
 		// Converting infix to postfix
 		string postfix_string = exp_parser_obj.infix_to_postfix(infix_string);
-		
+
+		// Constructing postfix binary tree
+		Tree_Node* root = tree_build_stack.tree_builder(postfix_string);
+
 		// Evaluating binary tree postfix
-		int result_num = exp_tree_obj.Evaluator(Tree_Node* root);
+		int result_num = exp_tree_obj.Evaluator(root);
 
 		// Returning the result number
 		return result_num;
