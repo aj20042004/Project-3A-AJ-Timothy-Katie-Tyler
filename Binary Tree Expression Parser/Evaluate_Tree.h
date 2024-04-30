@@ -13,7 +13,7 @@ public:
 
 	~Evaluate_Tree();
 
-	int Evaluator(Tree_Node* root);
+	int Evaluator(Tree_Node*);
 
 };
 
