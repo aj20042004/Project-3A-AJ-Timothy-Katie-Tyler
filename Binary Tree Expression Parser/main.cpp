@@ -1,18 +1,3 @@
-
-// Team members tasks:
-// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// 1) Katie: Creating the test cases and validating the output ( Can use last project's test cases ), in-line comments for Token header and cpp files, Tree_Node header and cpp files
-// 2) Timothy: Need to complete the Expression_Tree.cpp file ( in-line comments on Expression_Tree.cpp - spelling mistakes)
-// 3) Tyler: Need to complete the main.cpp ( in-line comments in the main file )
-// 4) AJ: Review the code
-
-// Bugs needs to be Fixed:
-// -------------------------------------------------------------------------------------------------------------
-// 1) 
-
-// Questions for Professor:
-// -------------------------------------------------------------------------------------------------------------
-
 #include <codecvt>
 #include <sstream>
 #include <iostream>
@@ -25,7 +10,8 @@ using namespace std;
 
 int main() {
 
-    ifstream input_file("Test_case_3.txt"); // Opens the input file
+    // Opens the input file
+    ifstream input_file("Test_case_3.txt");
     
     // Creating the instance for Expression_Tree 
     Expression_Tree parser;
@@ -57,7 +43,6 @@ int main() {
         }
        
     }
-
 
     // Closing the input file
     input_file.close();
