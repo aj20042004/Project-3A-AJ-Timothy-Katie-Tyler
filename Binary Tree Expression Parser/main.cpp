@@ -13,8 +13,6 @@
 // Questions for Professor:
 // -------------------------------------------------------------------------------------------------------------
 
-#include <codecvt> //I don't even know what this is for
-#include <sstream> //With my implementation of file reading, this library is probably unnecessary. Program still works with both libraries removed.
 #include <iostream>
 #include <iomanip>
 #include <fstream>
