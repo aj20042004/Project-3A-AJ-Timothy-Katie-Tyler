@@ -13,8 +13,8 @@
 // Questions for Professor:
 // -------------------------------------------------------------------------------------------------------------
 
-#include <codecvt>
-#include <sstream>
+#include <codecvt> //I don't even know what this is for
+#include <sstream> //With my implementation of file reading, this library is probably unnecessary. Program still works with both libraries removed.
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -25,43 +25,38 @@ using namespace std;
 
 int main() {
 
-    ifstream input_file("Test_case_3.txt"); // Opens the input file
+    // Opens the input file
+    ifstream input_file("Test_case_2.txt"); 
     
-    // Creating the instance for Expression_Tree 
+    // Creates an instance for Expression_Tree 
     Expression_Tree parser;
 
-    // Initializing the variable
+    // Initializes the variable
     string infix_expression;
 
     // Returns an error if no input file exists
     if (!input_file) {
-
-        cout << "Error! Sorry...Cannot read the file" << endl;
-        return -1; // Return error code indicating failure
+        cout << "Error! File not found" << endl;
+        return -1; // No file found, returns an error
     }
 
-    // Using getline to read the entire line
+    // Uses getline to read in an entire line
     while (getline(input_file, infix_expression)) {
 
-        // Checking if the line string is empty
-        if (infix_expression == "") {
-            break;
-        }
+        // Checks if the line is empty
+        if (infix_expression == "") { break; }
         
-        // Parsing and evaluating the formatted infix string using the parser instance
+        // Parses and evaluates the formatted infix string using the parser instance
         int result = parser.parse_and_evaluate(infix_expression);
         
-        // Checking for Error
-        if (result != -9999999) {
-            cout << "The Result is: " << result << endl;
-        }
-       
+        // Checks for any Errors
+        if (result != -9999999) { cout << "The Result is: " << result << endl; }
     }
 
 
-    // Closing the input file
+    // Closes the input file
     input_file.close();
 
-    // Returning
+    // End of program
 	return 0;
 }
