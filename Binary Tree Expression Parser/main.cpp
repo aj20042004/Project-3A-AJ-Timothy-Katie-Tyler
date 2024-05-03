@@ -25,7 +25,7 @@ using namespace std;
 
 int main() {
 
-    ifstream input_file("Test_case_1.txt"); // Opens the input file
+    ifstream input_file("Test_case_3.txt"); // Opens the input file
     
     // Creating the instance for Expression_Tree 
     Expression_Tree parser;
