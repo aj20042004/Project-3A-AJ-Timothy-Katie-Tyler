@@ -1,3 +1,5 @@
+
+// Importing the modules
 #include <string>
 #include <iostream>
 #include "Expression_Tree.h"
@@ -23,6 +25,7 @@ int Expression_Tree::parse_and_evaluate(const string& infix_string) {
 	// Try and catch block for parse and evaluating expression tree
 	try {
 
+		// Creating class objects
 		Convert_to_postfix exp_parser_obj;
 		Evaluate_Tree exp_tree_obj;
 		Build_Tree tree_build_obj;
