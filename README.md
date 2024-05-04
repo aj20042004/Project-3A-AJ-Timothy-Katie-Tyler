@@ -1,18 +1,19 @@
 # Binary Tree Infix Expression Parser
 
 Overview:
-- This project aims to implement an infix expression parser in C++ using binary trees. The parser will be capable of evaluating arithmetic and logical expressions efficiently.
+- This project aims to implement a binary tree infix expression parser in C++ using binary trees. The parser will be capable of evaluating arithmetic and logical expressions efficiently.
 
 Technical Requirements:
 - Parse infix expressions with support for arithmetic and logical operators with the specified precedencies.
 - Handle operator precedence according to specified rules.
 - Parse an expression given in a string format. The program should be flexible with the given expressions. The user should not worry about writing the spaces between operands and operators.
+- Build an expression tree using postfix string
 - Evaluate expressions efficiently.
 - The main() program should read expressions from an input file, and then output the evaluation results to the console.
 - Provide error handling for invalid expressions or divide-by-zero errors.
 
 Implementation:
-- The implementation will involve creating classes for expression parsing, evaluation, and error handling. The project will adhere to Object-Oriented Programming principles for better organization and scalability.
+- The implementation will involve creating classes for expression parsing, evaluation, building, and error handling. The project will adhere to Object-Oriented Programming principles for better organization and scalability.
 
 How to Use:
 - Clone the repository to your local machine.
